@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #dad5ce;
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+#divNav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3a3a3a00;
+  padding: 5px 50px 10px 50px;
+  position: fixed;
+  width: 98%;
+  top: 10px;
+  border-top: solid 1px white;
+  z-index: 1000;
+}
+
+#logo {
+  font-size: 30px;
+  font-weight: bold;
+  transition: transform 150ms, color 150ms;
+}
+
+#logo img {
+  height: 55px;
+  width: 55px;
+  vertical-align: middle;
+}
+
+#logo:hover {
+  transform: scale(1.01);
+  color: #6d8764;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  transition: color 150ms;
+}
+
+nav ul li a:hover {
+  color: #6d8764;
+}
+
+nav ul li:nth-child(4) a {
+  border-bottom: 3px solid;
+  transition: border-bottom 150ms, border-radius 100ms;
+  border-radius: 5px;
+}
+
+nav ul li:nth-child(4) a:hover {
+  border-bottom: 0px solid;
+  border-radius: 0px;
+}
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_MAIN_-_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacto {
+  margin-top: 50px;
+  background-color: #1c1c1c31;
+  box-shadow: 0px 0px 2px black;
+  padding: 25px 20px;
+  gap: 8px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*_-_-_-MAPA-_-_-_*/
+.leaflet-routing-container {
+  display: none;
+}
+
+#map {
+  height: 350px;
+  width: 100%;
+  border-radius: 3px;
+  border: solid 1.5px black;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#map span,
+#map div {
+  color: black;
+}
+
+#btnRuta {
+  background-color: #ffffff;
+  color: #4e342e;
+  padding: 8px 15px;
+  border-radius: 0px 0px 10px 10px;
+  border: solid 1.5px;
+  border-top: 1px solid;
+  transition: background-color 300ms;
+  cursor: pointer;
+  width: 100%;
+}
+
+#btnRuta:hover {
+  background-color: #6d8764;
+}
+
+/*_-_-_-TABLA-_-_-_*/
+#tabla table tr {
+  transition: transform 150ms;
+}
+#tabla table tr:hover {
+  transform: scale(1.02);
+}
+
+#tabla table {
+  width: 100%;
+  height: 100%;
+}
+
+#tabla table tr th a {
+  color: #4e3620;
+}
+
+#tabla table tr th {
+  background: #6d8764;
+  border-radius: 3px;
+}
+
+#tabla table tr :nth-child(2) {
+  background-color: #fffaf5ef;
+  border-radius: 3px;
+  color: #4e2039;
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_FOOTER_-_-_-_-_-_-_-_-_-_-_-_-_-_*/
+
+footer {
+  background-color: #1c1c1c;
+  text-align: center;
+  padding: 20px;
+}
+
+#redes {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+}
+
+.redesIcon i {
+  transition: color 100ms, scale 100ms;
+}
+
+.redesIcon i:hover {
+  color: #6d8764;
+  scale: 1.1;
+}
