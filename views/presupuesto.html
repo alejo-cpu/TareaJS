@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noir Coffee</title>
+    <link rel="stylesheet" href="/css/presupuesto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="favicon" href="/images/favicon.icon" type="image/x-icon" />
+  </head>
+  <body>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <header>
+      <div id="divNav">
+        <nav>
+          <a href="/index.html">
+            <div id="logo">
+              <img src="/images/logo.jpg" width="64" height="64" alt="logo" />
+              Noir Coffee
+            </div>
+          </a>
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/views/galeria.html">Galería</a></li>
+            <li><a href="/views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="/views/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_MAIN_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <main>
+      <!--FORMULARIO 1-->
+      <form id="presupuestoForm">
+        <h2>Presupuesto</h2>
+
+        <!-- PRODUCTO -->
+        <select name="producto" id="producto">
+          <option value="100" selected>Café Premium ($100)</option>
+          <option value="150">Pack Degustación ($150)</option>
+          <option value="200">Kit Barista ($200)</option>
+        </select>
+
+        <!-- PLAZO -->
+        <label for="plazo">Plazo (días):</label>
+        <input
+          type="number"
+          id="plazo"
+          name="plazo"
+          value="10"
+          min="0"
+          max="20"
+        />
+
+        <!-- EXTRAS -->
+        <label>Extras:</label>
+        <label
+          ><input type="checkbox" class="extra" value="20" /> Empaque regalo
+          (+$20)</label
+        >
+
+        <label
+          ><input type="checkbox" class="extra" value="50" /> Taza edición
+          limitada (+$50)</label
+        >
+        <label
+          ><input type="checkbox" class="extra" value="30" /> Envío exprés
+          (+$30)</label
+        >
+
+        <!-- PRESUPUESTO -->
+        <div id="totalDiv">
+          <p>Presupuesto estimado:</p>
+          <div id="total">$0</div>
+        </div>
+      </form>
+
+      <!--FORMULARIO 2-->
+      <form id="datosForm">
+        <h2>Formulario</h2>
+        <input
+          class="campos"
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder=" intruduzca su nombre"
+          required
+        />
+        <input
+          class="campos"
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder=" intruduzca su apellido"
+          required
+        />
+        <input
+          class="campos"
+          type="tel"
+          name="telefono"
+          id="telefono"
+          placeholder=" intruduzca su telefono"
+          required
+        />
+        <input
+          class="campos"
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" intruduzca su email"
+          required
+        />
+
+        <div id="terminos">
+          <label>
+            <input id="condiciones" type="checkbox" name="checkbox" required />
+            <span
+              >Acepto los
+              <a href="/views/leerMas.html">términos y condiciones</a></span
+            >
+          </label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_FOOTER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <footer>
+      <p>&copy; 2025 Noir Coffee | Todos los derechos reservados</p>
+
+      <ul id="redes">
+        <li class="redesIcon">
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://www.facebook.com/?locale=es_ES" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://twitter.com/?lang=es" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/js/presupuesto.js"></script>
+  </body>
+</html>

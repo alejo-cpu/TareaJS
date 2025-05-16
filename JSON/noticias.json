@@ -1,0 +1,33 @@
+[
+  {
+    "imagen": "images/landing/noticias/noticia1.webp",
+    "tema": "CONCURSOS",
+    "titulo": "Gana un monitor BenQ PD2706QN: la opción definitiva para diseñadores gráficos."
+  },
+  {
+    "imagen": "images/landing/noticias/noticia2.webp",
+    "tema": "IMPRENTA",
+    "titulo": "Epson SureColor S7100: una impresora solvente para diseñadores e impresores que buscan fiabilidad y calidad."
+  },
+
+  {
+    "imagen": "images/landing/noticias/noticia3.webp",
+    "tema": "OPINIÓN",
+    "titulo": "El Día C y cómo casi entrevisto a una IA, por Víctor Palau."
+  },
+  {
+    "imagen": "images/landing/noticias/noticia4.webp",
+    "tema": "INTELIGENCIA ARTIFICIAL",
+    "titulo": "Adobe presenta su IA generativa para vídeo: Firefly Video Model."
+  },
+  {
+    "imagen": "images/landing/noticias/noticia5.webp",
+    "tema": "FOTOGRAFÍA",
+    "titulo": "Anna Devís y Daniel Rueda llevan su universo visual a Seúl con la exposición Happygraphers."
+  },
+  {
+    "imagen": "images/landing/noticias/noticia6.webp",
+    "tema": "ARTE",
+    "titulo": "Boa Mistura, Enviarte y UNRWA se unen en una iniciativa solidaria para ayudar a Gaza."
+  }
+]

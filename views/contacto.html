@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noir Coffee</title>
+    <link rel="stylesheet" href="/css/contacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="favicon" href="/images/favicon.icon" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_HEADER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <header>
+      <div id="divNav">
+        <nav>
+          <a href="/index.html">
+            <div id="logo">
+              <img src="/images/logo.jpg" width="64" height="64" alt="logo" />
+              Noir Coffee
+            </div>
+          </a>
+          <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/views/galeria.html">Galería</a></li>
+            <li><a href="/views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="/views/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_MAIN_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <main>
+      <div id="contacto">
+        <div id="mapa">
+          <div id="map"></div>
+          <button id="btnRuta">Cómo llegar</button>
+        </div>
+
+        <div id="tabla">
+          <table>
+            <tr>
+              <th>Direccion</th>
+              <th>C. de Provença, 112, Eixample, 08029 Barcelona</th>
+            </tr>
+            <tr>
+              <th>Telefono</th>
+              <th>935 51 72 85</th>
+            </tr>
+            <tr>
+              <th>Correo Electronico</th>
+              <th>
+                <a href="mailto:coronaalejo2@gmail.com"
+                  >coronaalejo2@gmail.com</a
+                >
+              </th>
+            </tr>
+            <tr>
+              <th>Web</th>
+              <th>Aca va a ir la url</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <!--_-_-_-_-_-_-_-_-_-_-_-_-_FOOTER_-_-_-_-_-_-_-_-_-_-_-_-_-->
+    <footer>
+      <p>&copy; 2025 Noir Coffee | Todos los derechos reservados</p>
+
+      <ul id="redes">
+        <li class="redesIcon">
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://www.facebook.com/?locale=es_ES" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://twitter.com/?lang=es" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="redesIcon">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
+
+    <script src="/js/constacto.js"></script>
+  </body>
+</html>
