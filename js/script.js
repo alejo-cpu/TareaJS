@@ -18,7 +18,7 @@ document
   .forEach((e) => observer.observe(e));
 
 //NOTICIAS
-fetch("../JSON/noticias.json")
+fetch("JSON/noticias.json")
   .then((response) => response.json())
   .then((data) => {
     const contenedorNoticias = document.getElementById("contenedorNoticias");
