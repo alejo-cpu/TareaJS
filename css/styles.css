@@ -319,7 +319,7 @@ section {
 }
 
 #imageContent {
-  background: url("alejo-cpu/TareaJS/images/landing/nosotros/nosotros1.webp") center/cover
+  background: url("../images/landing/nosotros/nosotros1.webp") center/cover
     no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
 }
