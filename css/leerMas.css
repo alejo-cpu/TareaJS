@@ -1,3 +1,24 @@
-html{
-    background-color: blue;
+#padre {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 150px;
+    height: auto;
+}
+
+a {
+    background-color: rgb(255, 1, 1);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 18px;
+    transition: all 300ms;       
+}
+
+a:hover {
+    background-color: rgb(33, 113, 137);
 }

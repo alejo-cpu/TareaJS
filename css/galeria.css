@@ -128,6 +128,9 @@ nav ul li:nth-child(2) a:hover {
   border-radius: 10px;
   border: solid rgb(255, 255, 255) 1px;
   animation: animacion ease-out;
+  
+  /* Las proximas 2 propiedades son experimentales y pueden dar errores en el W3C Validator,
+   pero funcionan correctamente en navegadores modernos como Chrome y Edge */
   animation-timeline: view();
   animation-range: entry cover 25%;
 }
